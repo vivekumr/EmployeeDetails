@@ -1,0 +1,22 @@
+server:
+  port: 8070
+  servlet:
+    context-path: /EmployeeDetails
+spring:
+  mvc:
+    view:
+      prefix: /pages/
+      suffix: .jsp
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: system
+    password: manager
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true  
