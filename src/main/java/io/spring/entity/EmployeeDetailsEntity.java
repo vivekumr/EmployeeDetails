@@ -27,6 +27,8 @@ public class EmployeeDetailsEntity {
 	private Date dob;
 	@Column(name = "designation",length = 20)
 	private String designation;
+	
+	
 	public int getEmpId() {
 		return empId;
 	}
