@@ -9,11 +9,15 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Table(name = "employee_details_table")
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 public class EmployeeDetailsEntity {
 	@Id
 	@Column(name = "emp_id",length = 20)
